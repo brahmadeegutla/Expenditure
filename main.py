@@ -1,7 +1,7 @@
 import PyPDF2
 import pandas as pd
 from tabula import wrapper, read_pdf
-from tabulate import tabulate
+#from tabulate import tabulate
 import pyspark
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructField,StructType,StringType
@@ -14,7 +14,7 @@ spark = SparkSession.builder.appName("tosparkdf").getOrCreate()
 
 
 #def create_bofa_cc_transactions(filename):
-filename = "/Users/parinibrahma/Desktop/Expenditure/Credit/eStmt_2018-06-15.pdf"
+filename = "/Users/parinibrahma/PycharmProjects/Expenditure/Credit/eStmt_2018-06-15.pdf"
 reader = PyPDF2.PdfFileReader(open(filename, mode='rb' ))
 n = reader.getNumPages()             # to get the count of  umber of pages in a PDF
 print('no of pages are ' + str (n))
