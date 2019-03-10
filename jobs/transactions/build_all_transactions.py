@@ -26,21 +26,21 @@ def run_all_transactions(spark, config):
     bofa_chk_master = config['target']['bofa_chk_master']+ '*/*.csv'
     discover_master = config['target']['discover_master']+ '*/*.csv'
     citi_master = config['target']['citi_master']+ '*/*.csv'
+    chase_master = config['target']['chase_master'] + '*/*.csv'
 
     bofacredit = ['Transaction_date', 'Description', 'Amount', 'trndt', 'act_type']
     bofachk = ['Date', 'Description', 'Amount', 'trndt', 'act_type']
     discover = ['Trans_Date', 'Description', 'Amount', 'trndt', 'act_type']
     citi = ['transdate', 'Description', 'Amount', 'trndt', 'act_type']
+    chase = ['date', 'description', 'amount', 'trndt', 'act_type']
 
     master_header = ['Transaction_date', 'Description', 'Amount', 'trndt', 'act_type']
-
-
-
 
     bofa_chk_master = spark.read.csv(bofa_chk_master, header=True, sep=',').select(*bofachk)
     discover_master = spark.read.csv(discover_master, header=True, sep=',').select(*discover)
     citi_master = spark.read.csv(citi_master, header=True, sep=',').select(*citi)
     bofa_cc_master_df = spark.read.csv(bofa_cc_master, header=True, sep=',').select(*bofacredit)
+    chase_master_df = spark.read.csv(chase_master, header=True, sep=',').select(*chase)
 
     citi_master = citi_master.\
         withColumn('Amount', replace_lp("Amount")).\
@@ -51,16 +51,15 @@ def run_all_transactions(spark, config):
     bofa_cc_master_df = bofa_cc_master_df.withColumn("Amount", flip_sign("Amount"))
     citi_master = citi_master.withColumn("Amount", flip_sign("Amount"))
 
-
     master_df = bofa_cc_master_df.\
         union(bofa_chk_master).\
         union(discover_master).\
-        union(citi_master).toDF(*master_header)
+        union(citi_master).\
+        union(chase_master_df).toDF(*master_header)
 
     master_df = master_df.withColumn('Description', F.upper(F.col('Description')))
 
-    master_df.filter("Description like '%PAYMENT%'").show(100, False)
-
+    master_df.show(500, False)
 
     master_df.coalesce(1).write.format("csv").mode("overwrite").save(all_master_path, header="true")
 

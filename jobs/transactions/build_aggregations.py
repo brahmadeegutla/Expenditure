@@ -12,6 +12,8 @@ from datetime import datetime
 from pyspark.sql.functions import col, udf
 from pyspark.sql.types import DateType
 import calendar
+from shared.utilities import read_latest_file_from_hdfs
+
 
 def get_aggregations(year, month):
     """
@@ -27,7 +29,9 @@ def get_aggregations(year, month):
     _, end_day = calendar.monthrange(year, int(month))
     end_date = str(year)+month+str(end_day)
 
-    all_transactions = spark.read.csv(all_transactions_path+'/*/*.csv', sep=',', header=True)
+    latest_file = read_latest_file_from_hdfs(spark, all_transactions_path, match_filename='20')
+
+    all_transactions = spark.read.csv(latest_file, sep=',', header=True)
     monthly_transactions = all_transactions.filter(f"trndt between {start_date} and {end_date}")
     category_flags = spark.read.csv(category_flags_path, sep=',', header=True)
     desc_flags = spark.read.csv(desc_flags_path, sep=',', header=True)
@@ -59,7 +63,7 @@ def get_aggregations(year, month):
 
     transactions.groupby('act_type').agg(F.count("act_type").alias("total_act_type_transactions")).show()
 
-    null_flags = transactions.filter("FLAG = 'FD'")
+    null_flags = transactions.filter("FLAG is null")
     null_flags.orderBy(F.asc("trndt")).show(100, False)
 
     grouped_df = transactions.groupby('FLAG').agg(F.sum("Amount").alias("total_amt"))

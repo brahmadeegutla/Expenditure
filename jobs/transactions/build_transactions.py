@@ -1,7 +1,9 @@
-from shared.utilities import write_bofa_cc_to_master, write_src_csv_to_master, convert_date_format
+from shared.utilities import write_bofa_cc_to_master, write_src_csv_to_master, convert_date_format, \
+    write_chase_chk_pdf_to_master, get_file_starting_with
 import calendar
 import datetime
 import pyspark.sql.functions as F
+import os
 
 def run_transactions(spark, config, cycle_date, account_type):
     """
@@ -17,15 +19,21 @@ def run_transactions(spark, config, cycle_date, account_type):
         cycle_year = '{}'.format(cycle_date[0:4])
         cycle_month = '{}'.format(cycle_date[4:6])
         cycle_month = calendar.month_name[int(cycle_month)]
+        previous_year = int(cycle_year) - 1
 
         src_path = config["source"]["citi"] + 'tabula-' + cycle_year +' '+ cycle_month + '*.csv'
         master_path = config["target"]["citi_master"] + cycle_date
 
-        src_df = spark.read.csv(src_path, header=True, sep=',')
+        new_df = spark.read.csv(src_path, header=True, sep=',')
 
-        src_df = convert_date_format(src_df, 'transdate', '%d-%b', '%m%d')
+        if cycle_month == '01':
+            new_df = new_df.withColumn("transdate",
+                                           F.expr(f"case when transdate like '%Dec%' then concat(transdate,'-',{previous_year})"
+                                                  f" else concat(transdate,'-',{cycle_year}) end"))
+        else:
+            new_df = new_df.withColumn("transdate", F.expr(f"concat(transdate,'-',{cycle_year})"))
 
-        src_df = src_df.withColumn("trndt", F.concat(F.lit(cycle_year), 'trndt'))
+        src_df = convert_date_format(new_df, 'transdate', '%d-%b-%Y', '%Y%m%d')
 
         new_df = write_src_csv_to_master(src_df, master_path, account_type)
 
@@ -74,10 +82,45 @@ def run_transactions(spark, config, cycle_date, account_type):
 
         new_df.coalesce(1).write.format("csv").mode("overwrite").save(master, header="true")
 
-    else:
-        print('Please put in the right account_type: from citi discover bofachk bofacredit')
-        exit()
+    elif account_type == 'chase':
 
+        cycle_date_input = '{}-{}'.format(cycle_date[0:4], cycle_date[4:6])
+        cycle_year = cycle_date[0:4]
+        cycle_month = cycle_date[4:6]
+        previous_year = int(cycle_year) - 1
+        trg_cycle_date = '{}{}'.format(cycle_date[0:4], cycle_date[4:6])
+
+        src_path = config["source"]["chase"]
+        master = config["target"]["chase_master"] + trg_cycle_date
+        headers = ["date", "description", "amount", "balance"]
+
+        src_file_name = get_file_starting_with(spark, src_path, match_filename=cycle_date)
+        src_path = os.path.join(src_path, src_file_name)
+
+        src_df = spark.read.csv(src_path, header=True, sep=',').filter('AMOUNT is not null')
+
+        new_df = src_df.toDF(*headers)
+
+
+        #new_df = write_chase_chk_pdf_to_master(spark, src, cycle_date)
+
+        if cycle_month == '01':
+            new_df = new_df.withColumn("date",
+                                           F.expr(f"case when date like '%Dec%' then concat(date,'-',{previous_year})"
+                                                  f" else concat(date,'-',{cycle_year}) end"))
+        else:
+            new_df = new_df.withColumn("date", F.expr(f"concat(date,'-',{cycle_year})"))
+
+        new_df = convert_date_format(new_df, 'DATE', '%d-%b-%Y', '%Y%m%d')
+
+        new_df.show()
+
+        new_df = new_df.withColumn('act_type', F.lit(account_type))
+
+        new_df.coalesce(1).write.format("csv").mode("overwrite").save(master, header="true")
+
+    else:
+        print('Please put in the right account_type: from citi discover bofachk bofacredit chase')
 
     new_df.show(200, False)
 

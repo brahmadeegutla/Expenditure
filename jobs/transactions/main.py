@@ -22,6 +22,6 @@ def main(cycle_date, account_type):
         spark.stop()
 
 
-main(cycle_date='201809', account_type='bofacredit')
+main(cycle_date='201901', account_type='citi')
 
 
