@@ -1,7 +1,7 @@
 app_config = {
         "source": {
             "bofa_checking": "local_test_data/source/bofa_checking_csv/",
-            "bofa_credit": "local_test_data/source/bofa_credit_pdf/",
+            "bofa_credit": "local_test_data/source/bofa_credit_csv/",
             "discover": "local_test_data/source/discover_csv/",
             "citi": "local_test_data/source/citi_csv/",
             "chase": "local_test_data/source/chase_csv/"

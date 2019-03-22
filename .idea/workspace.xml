@@ -4,32 +4,129 @@
     <list default="true" id="4bfc9137-28d1-4b34-9b69-8883abb7f8f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jobs/transactions/build_aggregations.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobs/transactions/build_aggregations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobs/transactions/build_all_transactions.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobs/transactions/build_all_transactions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jobs/transactions/build_transactions.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobs/transactions/build_transactions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jobs/transactions/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobs/transactions/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local_test_data/lookup/category_flags.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_test_data/lookup/category_flags.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local_test_data/lookup/description_flags.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_test_data/lookup/description_flags.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/source/chase_pdf/20190124-statements-3315-.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/all_master/20190307/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/all_master/20190307/.part-00000-8406c8a5-353e-4788-bae4-5e7e15c05557-c000.csv.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/all_master/20190307/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/all_master/20190307/part-00000-8406c8a5-353e-4788-bae4-5e7e15c05557-c000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201808/.part-00000-e76906c2-64ee-4c7f-8078-5621b4d5adcb-c000.csv.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201808/part-00000-e76906c2-64ee-4c7f-8078-5621b4d5adcb-c000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201809/.part-00000-f25c940f-046d-4994-82bb-52144c040a03-c000.csv.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201809/part-00000-f25c940f-046d-4994-82bb-52144c040a03-c000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201808/.part-00000-318f9e64-389e-4151-bf56-562c1b1931bc-c000.csv.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201808/part-00000-318f9e64-389e-4151-bf56-562c1b1931bc-c000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201809/.part-00000-32f900f0-2611-4b92-8939-684d25fba197-c000.csv.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201809/part-00000-32f900f0-2611-4b92-8939-684d25fba197-c000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201808/.part-00000-27c9ac95-f984-4db7-b798-513d8b12b031-c000.csv.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201808/part-00000-27c9ac95-f984-4db7-b798-513d8b12b031-c000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201809/.part-00000-28bd2ca4-9142-47b1-9521-b8297f580b34-c000.csv.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201809/part-00000-28bd2ca4-9142-47b1-9521-b8297f580b34-c000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201810/.part-00000-3c72e974-38a1-4012-950d-249f7bc4df5c-c000.csv.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201810/part-00000-3c72e974-38a1-4012-950d-249f7bc4df5c-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-07-18.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-07-18.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-08-20.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-08-20.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-09-17.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-09-17.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-10-18.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-10-18.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-11-16.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-11-16.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-12-17.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-12-17.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2019-02-14.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2019-02-14.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2017-07-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2017-08-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2017-09-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2017-10-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2017-11-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2017-12-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2018-01-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2018-02-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2018-03-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2018-04-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2018-05-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2018-06-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2018-07-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2018-08-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2018-09-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2018-10-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2018-11-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2018-12-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/eStmt_2019-02-15.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 August 10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 August 10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 December 12.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 December 12.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 July 11.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 July 11.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 November 12.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 November 12.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 October 10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 October 10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 September 12.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 September 12.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2019 February 12.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2019 February 12.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2019 January 10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2019 January 10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/all_master/20190309/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/all_master/20190309/.part-00000-ef1da58b-b0f7-4545-8164-407aa968a5a7-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/all_master/20190309/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/all_master/20190309/part-00000-ef1da58b-b0f7-4545-8164-407aa968a5a7-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/all_master/20190310/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/all_master/20190310/.part-00000-d014d2ec-587f-4053-91c3-396f63063a8b-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/all_master/20190310/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/all_master/20190310/part-00000-d014d2ec-587f-4053-91c3-396f63063a8b-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201707/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201707/.part-00000-f9cd5cc3-c8b5-478b-ad13-c2d9539b898a-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201707/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201707/part-00000-f9cd5cc3-c8b5-478b-ad13-c2d9539b898a-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201708/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201708/.part-00000-f83abf12-2305-4b9d-9026-093a0daa547a-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201708/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201708/part-00000-f83abf12-2305-4b9d-9026-093a0daa547a-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201801/.part-00000-6507c8a5-624d-4a18-959b-a87349bd890c-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201801/part-00000-6507c8a5-624d-4a18-959b-a87349bd890c-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201806/.part-00000-99c866e4-1513-4d77-bef7-8fda9f47fbca-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201806/part-00000-99c866e4-1513-4d77-bef7-8fda9f47fbca-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201807/.part-00000-89b206c2-dc44-481d-9ec7-89bfc5ffb2a7-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201807/part-00000-89b206c2-dc44-481d-9ec7-89bfc5ffb2a7-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201808/.part-00000-bc35a767-e171-4271-a41c-b2bc290cd605-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201808/part-00000-bc35a767-e171-4271-a41c-b2bc290cd605-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201809/.part-00000-8becc78f-0fd3-4516-991d-7283b08cb221-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201809/part-00000-8becc78f-0fd3-4516-991d-7283b08cb221-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201810/.part-00000-78b69517-8b22-4666-9e89-cee8de9b1c42-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201810/part-00000-78b69517-8b22-4666-9e89-cee8de9b1c42-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201811/.part-00000-680e2e24-be47-4efe-b992-049a0cb84cb9-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201811/part-00000-680e2e24-be47-4efe-b992-049a0cb84cb9-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201812/.part-00000-f94e3b21-c0f1-48cb-87fe-fd284046f54d-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201812/part-00000-f94e3b21-c0f1-48cb-87fe-fd284046f54d-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201902/.part-00000-41b04f4a-c783-4b97-96d2-c54419ea2fb6-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201902/part-00000-41b04f4a-c783-4b97-96d2-c54419ea2fb6-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201807/.part-00000-16a1ef02-a07b-4fde-87ba-19fafcd37d5f-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201807/part-00000-16a1ef02-a07b-4fde-87ba-19fafcd37d5f-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201808/.part-00000-fe07e489-fd16-4c5d-874a-65fb92fc5b5f-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201808/part-00000-fe07e489-fd16-4c5d-874a-65fb92fc5b5f-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201809/.part-00000-427fb0e4-30bd-4dfc-9e50-6f9aeee59227-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201809/part-00000-427fb0e4-30bd-4dfc-9e50-6f9aeee59227-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201810/.part-00000-b1bcc64a-ec79-4776-bf1a-4ab0abb4bb6c-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201810/part-00000-b1bcc64a-ec79-4776-bf1a-4ab0abb4bb6c-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201811/.part-00000-c5115a64-dce5-4976-a696-e68729a21d1b-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201811/part-00000-c5115a64-dce5-4976-a696-e68729a21d1b-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201812/.part-00000-23a8beb9-2ccf-49a3-9972-ccd0d42e793f-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201812/part-00000-23a8beb9-2ccf-49a3-9972-ccd0d42e793f-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201902/.part-00000-eec6115f-37fe-47f0-be56-f127ca07bba2-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/bofa_chk_master/201902/part-00000-eec6115f-37fe-47f0-be56-f127ca07bba2-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/chase_master/201811/.part-00000-fc7ed13d-ac16-4c31-9516-1e555699322d-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/chase_master/201811/part-00000-fc7ed13d-ac16-4c31-9516-1e555699322d-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/chase_master/201812/.part-00000-37c61efd-db8b-4e9e-b453-a66a173b6bc6-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/chase_master/201812/part-00000-37c61efd-db8b-4e9e-b453-a66a173b6bc6-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/chase_master/201901/.part-00000-fe126aa1-fff0-4029-a2b4-30293a435fc1-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/chase_master/201901/part-00000-fe126aa1-fff0-4029-a2b4-30293a435fc1-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201807/.part-00000-7f35a2f2-c02c-404b-9c70-5c282d10f152-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201807/part-00000-7f35a2f2-c02c-404b-9c70-5c282d10f152-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201808/.part-00000-293b6f45-acd9-42ff-af9b-86e4cef6766d-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201808/part-00000-293b6f45-acd9-42ff-af9b-86e4cef6766d-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201809/.part-00000-512c5fe4-dabd-4ebd-88b1-60acefef5193-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201809/part-00000-512c5fe4-dabd-4ebd-88b1-60acefef5193-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201810/.part-00000-7cd8a444-f795-4404-9428-67afecac345d-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201810/part-00000-7cd8a444-f795-4404-9428-67afecac345d-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201811/.part-00000-af0a0bc8-1b81-4260-bf79-44628ec767c6-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201811/part-00000-af0a0bc8-1b81-4260-bf79-44628ec767c6-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201812/.part-00000-f0b74a89-2a42-4dc7-a45e-2d5a5267cbbf-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201812/part-00000-f0b74a89-2a42-4dc7-a45e-2d5a5267cbbf-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201901/.part-00000-c217dd08-6d4d-491e-974b-ff8bf1ac01c5-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201901/part-00000-c217dd08-6d4d-491e-974b-ff8bf1ac01c5-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201902/.part-00000-8dcc8d59-f432-473b-992f-aea0c868ff9f-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/citi_master/201902/part-00000-8dcc8d59-f432-473b-992f-aea0c868ff9f-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201807/.part-00000-83e5d718-ba82-4bdc-80ee-225ea56c1232-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201807/part-00000-83e5d718-ba82-4bdc-80ee-225ea56c1232-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201808/.part-00000-3117d7b2-d19f-4ae2-853e-7cdab78e8de8-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201808/part-00000-3117d7b2-d19f-4ae2-853e-7cdab78e8de8-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201809/.part-00000-984a96c8-240b-45fa-b9e9-921a88127318-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201809/part-00000-984a96c8-240b-45fa-b9e9-921a88127318-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201810/.part-00000-d5bb16e8-1ce1-4515-9086-a70bb37edba1-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201810/part-00000-d5bb16e8-1ce1-4515-9086-a70bb37edba1-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201812/.part-00000-31fbc044-61bb-49d3-9bfb-fe00bfa0af50-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201812/part-00000-31fbc044-61bb-49d3-9bfb-fe00bfa0af50-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201901/.part-00000-11cd8d09-a20a-4ef1-8ae5-5272041f8b43-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201901/part-00000-11cd8d09-a20a-4ef1-8ae5-5272041f8b43-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201902/.part-00000-cb597f60-fa1c-49a3-9b2d-5f8c01ed6f8b-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test_data/target/discover_master/201902/part-00000-cb597f60-fa1c-49a3-9b2d-5f8c01ed6f8b-c000.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/shared/utilities.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,9 +135,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Expenditure$build_all_transactions.coverage" NAME="build_all_transactions Coverage Results" MODIFIED="1552196413676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Expenditure$main.coverage" NAME="main Coverage Results" MODIFIED="1552195933344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/Expenditure$build_aggregations.coverage" NAME="build_aggregations Coverage Results" MODIFIED="1552196552919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Expenditure$build_all_transactions.coverage" NAME="build_all_transactions Coverage Results" MODIFIED="1553213253464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Expenditure$main.coverage" NAME="main Coverage Results" MODIFIED="1553213233286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/Expenditure$build_aggregations.coverage" NAME="build_aggregations Coverage Results" MODIFIED="1553262009266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Expenditure" />
@@ -50,8 +161,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jobs/transactions/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="225">
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -62,8 +173,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jobs/transactions/build_aggregations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="76" column="51" lean-forward="true" selection-start-line="76" selection-start-column="51" selection-end-line="76" selection-end-column="51" />
+            <state relative-caret-position="2080">
+              <caret line="178" column="18" lean-forward="true" selection-start-line="178" selection-start-column="18" selection-end-line="178" selection-end-column="18" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -74,8 +185,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jobs/transactions/build_transactions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+            <state relative-caret-position="-1664">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
               <folding>
                 <element signature="e#0#159#0" expanded="true" />
               </folding>
@@ -84,31 +195,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shared/utilities.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="187" column="4" selection-start-line="187" selection-start-column="4" selection-end-line="187" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jobs/transactions/build_all_transactions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="-62">
+              <caret line="59" column="82" selection-start-line="59" selection-start-column="82" selection-end-line="59" selection-end-column="82" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -133,7 +223,6 @@
       <find>filename</find>
       <find>WALM</find>
       <find>SANDEE</find>
-      <find>HALAL</find>
       <find>show</find>
       <find>PHONE</find>
       <find>PAYMENT</find>
@@ -141,6 +230,19 @@
       <find>HI</find>
       <find>CC</find>
       <find>RSM</find>
+      <find>RE</find>
+      <find>PEP</find>
+      <find>CUISINE</find>
+      <find>DEP</find>
+      <find>KUCHI</find>
+      <find>MAHESH</find>
+      <find>SAI</find>
+      <find>RENT</find>
+      <find>,SAI,</find>
+      <find>F</find>
+      <find>sub</find>
+      <find>HALAL</find>
+      <find>INT</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,22 +258,39 @@
         <option value="$PROJECT_DIR$/jobs/transactions/transformations.py" />
         <option value="$PROJECT_DIR$/jobs/transactions/sample.py" />
         <option value="$PROJECT_DIR$/resources/headers.py" />
+        <option value="$PROJECT_DIR$/shared/utilities.py" />
+        <option value="$PROJECT_DIR$/jobs/transactions/build_all_transactions.py" />
+        <option value="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf/tabula-eStmt_2018-11-15.csv" />
+        <option value="$PROJECT_DIR$/resources/config.py" />
+        <option value="$PROJECT_DIR$/jobs/transactions/build_transactions.py" />
+        <option value="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-02-14.csv" />
+        <option value="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-01-18.csv" />
+        <option value="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-03-19.csv" />
+        <option value="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-04-17.csv" />
+        <option value="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-05-17.csv" />
+        <option value="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-06-18.csv" />
+        <option value="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-07-18.csv" />
+        <option value="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-08-20.csv" />
+        <option value="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-09-17.csv" />
+        <option value="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-10-18.csv" />
+        <option value="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-11-16.csv" />
+        <option value="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-12-17.csv" />
+        <option value="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2019-02-14.csv" />
+        <option value="$PROJECT_DIR$/local_test_data/target/all_master/20190318/part-00000-94871b81-df9b-4428-bd4f-d055279888a3-c000.csv" />
+        <option value="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2019-01-17.csv" />
+        <option value="$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-March 12.csv" />
+        <option value="$PROJECT_DIR$/jobs/transactions/main.py" />
         <option value="$PROJECT_DIR$/local_test_data/lookup/description_flags.csv" />
         <option value="$PROJECT_DIR$/local_test_data/lookup/category_flags.csv" />
-        <option value="$PROJECT_DIR$/shared/utilities.py" />
-        <option value="$PROJECT_DIR$/resources/config.py" />
-        <option value="$PROJECT_DIR$/jobs/transactions/main.py" />
-        <option value="$PROJECT_DIR$/jobs/transactions/build_transactions.py" />
-        <option value="$PROJECT_DIR$/jobs/transactions/build_all_transactions.py" />
         <option value="$PROJECT_DIR$/jobs/transactions/build_aggregations.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
-    <option name="y" value="34" />
-    <option name="width" value="1869" />
-    <option name="height" value="987" />
+    <option name="x" value="135" />
+    <option name="y" value="64" />
+    <option name="width" value="1440" />
+    <option name="height" value="816" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -213,49 +332,7 @@
               <item name="Expenditure" type="b2602c69:ProjectViewProjectNode" />
               <item name="Expenditure" type="462c0819:PsiDirectoryNode" />
               <item name="local_test_data" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="bofa_checking_csv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Expenditure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Expenditure" type="462c0819:PsiDirectoryNode" />
-              <item name="local_test_data" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="bofa_credit_pdf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Expenditure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Expenditure" type="462c0819:PsiDirectoryNode" />
-              <item name="local_test_data" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="chase_csv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Expenditure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Expenditure" type="462c0819:PsiDirectoryNode" />
-              <item name="local_test_data" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="citi_csv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Expenditure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Expenditure" type="462c0819:PsiDirectoryNode" />
-              <item name="local_test_data" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="discover_csv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Expenditure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Expenditure" type="462c0819:PsiDirectoryNode" />
-              <item name="local_test_data" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Expenditure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Expenditure" type="462c0819:PsiDirectoryNode" />
-              <item name="local_test_data" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="all_master" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Expenditure" type="b2602c69:ProjectViewProjectNode" />
@@ -280,17 +357,19 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/local_test_data/source/orig_bofa_chk" />
+      <recent name="$PROJECT_DIR$/local_test_data/source/orig_citi" />
+      <recent name="$PROJECT_DIR$/local_test_data/source/orig_bofa_cc" />
+      <recent name="$PROJECT_DIR$/local_test_data/source/bofa_chk" />
+      <recent name="$PROJECT_DIR$/local_test_data/source/chase_pdf" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/local_test_data/source/citi_csv" />
+      <recent name="$PROJECT_DIR$/local_test_data/source/bofa_credit_pdf" />
+      <recent name="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv" />
       <recent name="$PROJECT_DIR$/local_test_data/target/all_master" />
       <recent name="$PROJECT_DIR$/local_test_data/source/chase_pdf" />
-      <recent name="$PROJECT_DIR$/jobs/transactions" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/local_test_data/source/chase_pdf" />
-      <recent name="$PROJECT_DIR$/local_test_data/source/bofa_checking_csv" />
-      <recent name="$PROJECT_DIR$/local_test_data/source/citi_csv" />
-      <recent name="$PROJECT_DIR$/local_test_data/source" />
-      <recent name="$PROJECT_DIR$/local_test_data/stg" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -415,23 +494,24 @@
       <workItem from="1545457019113" duration="2359000" />
       <workItem from="1545498564736" duration="45436000" />
       <workItem from="1551645082484" duration="29443000" />
-      <workItem from="1552018135820" duration="18923000" />
+      <workItem from="1552018135820" duration="45067000" />
+      <workItem from="1553125276130" duration="14936000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96161000" />
+    <option name="totallyTimeSpent" value="137241000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="34" width="1869" height="987" extended-state="0" />
+    <frame x="135" y="64" width="1440" height="816" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49709302" visible="true" weight="0.31636563" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49709302" visible="true" weight="0.2160229" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.502907" side_tool="true" weight="0.269514" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.8055965" weight="0.15296566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49852726" visible="true" weight="0.46480447" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39975095" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49852726" weight="0.12376238" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3988827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -439,172 +519,363 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3292011" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5014728" side_tool="true" weight="0.4090909" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4992636" weight="0.34189945" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32882413" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4992636" visible="true" weight="0.27900553" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32872927" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.4483493" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3297568" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/local_test_data/target/bofa_cc_master/2017-07-15/part-00000-f53a5a68-e8f1-45fb-8977-a3ccff27d4f7-c000.csv" />
-    <entry file="file://$PROJECT_DIR$/local_test_data/target/discover_master/201809/part-00000-0bdba9df-a516-4aa1-ae39-0b715c1bf1c8-c000.csv" />
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 September 12.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/chase_csv/tabula-20190124-statements-3315-.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/chase_csv/tabula-20190225-statements-3315-.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/discover_csv/Discover-Statement-20190116.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 October 10.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/target/citi_master/201807/part-00000-7f35a2f2-c02c-404b-9c70-5c282d10f152-c000.csv" />
+    <entry file="file://$PROJECT_DIR$/local_test_data/target/citi_master/201901/part-00000-1fdc404a-1f69-4d64-85dd-8bf704696110-c000.csv" />
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/discover_csv/Discover-Statement-20181016.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/local_test_data/source/discover_csv/Discover-Statement-20181116.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/target/bofa_chk_master/2018-0/part-00000-a6f7e115-fabb-4f95-b6a2-0b7a184c74cd-c000.csv" />
-    <entry file="file://$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201806/part-00000-84884ff6-7529-4501-ba70-674fd70f1494-c000.csv" />
-    <entry file="file://$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201707/part-00000-70c84c45-58ed-4eaa-87a1-fd672a579ee3-c000.csv" />
-    <entry file="file://$PROJECT_DIR$/descriptions/part-00000-0d8542df-c8ff-4e4d-b50e-37b3d9f636a9-c000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/descriptions/part-00000-1fa639cd-ccdd-4a71-9033-a7f0771c7ac7-c000.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201811/part-00000-680e2e24-be47-4efe-b992-049a0cb84cb9-c000.csv" />
+    <entry file="file://$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201811/part-00000-89181278-223d-4157-bfc0-e9e9a02a3ad3-c000.csv" />
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_credit_csv/tabula-eStmt_2018-01-15.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/descriptions/part-00000-2e3428e6-c35e-451e-9a4a-3f9c4a033fb6-c000.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/orig_citi/tabula-2018 April 11.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/descriptions/part-00000-4a1d792b-287e-4399-a570-2ae80ad4548d-c000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/orig_bofa_cc/tabula-nov.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/descriptions/part-00000-5ed4ecb3-92d7-4a34-af9a-3787cc1d6bf4-c000.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_credit_csv/tabula-eStmt_2018-11-15.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/descriptions/part-00000-6ddf8de7-6029-4c30-95a9-5ee800bd756c-c000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/descriptions/part-00000-5e8c86de-cf50-454a-b890-448b34710ccd-c000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/descriptions/part-00000-02ccda5f-50fd-4929-80f4-776d18d3a386-c000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/descriptions/part-00000-2b656207-2f8b-470a-8988-6bbb884b6d43-c000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/descriptions/part-00000-1f8876f2-6fb5-4787-a219-26b3e67819fa-c000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/target/discover_master/201808/part-00000-27c9ac95-f984-4db7-b798-513d8b12b031-c000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/headers.py">
+    <entry file="file://$PROJECT_DIR$/shared/utilities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="21" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/target/all_master/20190303/part-00000-d05fe290-8cb1-4791-8b2a-49011f715ae0-c000.csv" />
-    <entry file="file://$PROJECT_DIR$/local_test_data/target/bofa_cc_master/201707/part-00000-f9cd5cc3-c8b5-478b-ad13-c2d9539b898a-c000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
+    <entry file="file://$PROJECT_DIR$/resources/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_credit_csv/tabula-eStmt_2018-05-15.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/target/citi_master/201808/part-00000-318f9e64-389e-4151-bf56-562c1b1931bc-c000.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_credit_csv/tabula-eStmt_2018-06-15.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/target/all_master/20190303/part-00000-44906d42-4467-449d-880e-b4135f728e31-c000.csv" />
-    <entry file="file://$PROJECT_DIR$/local_test_data/target/all_master/20190304/part-00000-c26432ff-f086-49f0-931e-bdecb81dfcc3-c000.csv" />
-    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-08-20.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-245" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 August 10.csv">
       <provider editor-type-id="text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/source/discover_csv/Discover-Statement-20180716.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="84" lean-forward="true" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
+        <state relative-caret-position="45">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
         </state>
       </provider>
-      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 December 12.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 February 12.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 January.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 June.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 July 11.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 May.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 April.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-03-19.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="437">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-02-14.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-04-17.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="287">
+          <caret line="38" column="63" lean-forward="true" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-05-17.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="422">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-06-18.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="422">
+          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-10-18.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="422">
+          <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-09-17.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="422">
+          <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-08-20.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="422">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-07-18.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/target/chase_master/201901/part-00000-53160547-d64d-4bf4-ab23-9ce81c7fa8e1-c000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/lookup/new_descriptions.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="329">
-          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        <state relative-caret-position="422">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
         </state>
       </provider>
-      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-11-16.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="422">
+          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-12-17.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="422">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2019-02-14.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/target/all_master/20190318/part-00000-94871b81-df9b-4428-bd4f-d055279888a3-c000.csv" />
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2019-01-17.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="408">
+          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2019 March 12.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2019 January 10.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-01-18.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="2676" column="4" selection-start-line="2676" selection-start-column="4" selection-end-line="2676" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobs/transactions/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobs/transactions/build_all_transactions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-62">
+          <caret line="59" column="82" selection-start-line="59" selection-start-column="82" selection-end-line="59" selection-end-column="82" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local_test_data/lookup/description_flags.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="286">
-          <caret line="185" column="25" selection-start-line="185" selection-start-column="25" selection-end-line="185" selection-end-column="25" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="1935">
           <caret line="129" column="7" selection-start-line="129" selection-start-column="7" selection-end-line="129" selection-end-column="7" />
@@ -613,13 +884,13 @@
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/lookup/category_flags.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="302">
-          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        <state relative-caret-position="99">
+          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test_data/lookup/category_flags.csv">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
@@ -628,148 +899,26 @@
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2018-12-17.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 December 12.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/source/discover_csv/Discover-Statement-20180616.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2019 February 12.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 September 12.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 August 10.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/source/chase_csv/tabula-20190124-statements-3315-.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/source/chase_csv/tabula-20190225-statements-3315-.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/source/discover_csv/Discover-Statement-20190116.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/source/bofa_checking_csv/tabula-eStmt_2019-02-14.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2018 October 10.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/source/citi_csv/tabula-2019 January 10.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/target/citi_master/201807/part-00000-7f35a2f2-c02c-404b-9c70-5c282d10f152-c000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test_data/target/citi_master/201901/part-00000-1fdc404a-1f69-4d64-85dd-8bf704696110-c000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/transactions/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="207">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jobs/transactions/build_transactions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+        <state relative-caret-position="-1664">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding>
             <element signature="e#0#159#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shared/utilities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="187" column="4" selection-start-line="187" selection-start-column="4" selection-end-line="187" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/transactions/build_all_transactions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jobs/transactions/build_aggregations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="76" column="51" lean-forward="true" selection-start-line="76" selection-start-column="51" selection-end-line="76" selection-end-column="51" />
+        <state relative-caret-position="2080">
+          <caret line="178" column="18" lean-forward="true" selection-start-line="178" selection-start-column="18" selection-end-line="178" selection-end-column="18" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
