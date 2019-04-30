@@ -87,7 +87,15 @@ def get_aggregations(year, month, in_category, all=False, flipsign=True):
             print('grouped_df')
             grouped_df = grouped_df.join(category_flags, "FLAG", "left_outer")\
                          .orderBy(F.desc("total_amt"))
+
+            grouped_df = grouped_df.filter("FLAG<>'PAY'")
             grouped_df.show(200, False)
+
+            y = grouped_df.select("total_amt").rdd.map(lambda row: row[0]).collect()
+
+            print(y)
+            #print('incoming', sum(i for i in y if i > 0))
+            #print('outgoing', sum(i for i in y if i < 0))
 
             # all_transactions = all_transactions.withColumn("year_month", F.substring(F.col("trndt"), 1, 6))
             # all_transactions.groupBy("year_month","")
@@ -95,6 +103,8 @@ def get_aggregations(year, month, in_category, all=False, flipsign=True):
     else:
         category_flags = spark.read.csv(category_flags_path, sep=',', header=True)
         desc_flags = spark.read.csv(desc_flags_path, sep=',', header=True)
+
+        category_flags.show(100, False)
 
         desc_only_flags = desc_flags.select('DESCRIPTIONS')
         Flag_df = [str(i.DESCRIPTIONS) for i in desc_only_flags.collect()]
@@ -136,13 +146,13 @@ def get_aggregations(year, month, in_category, all=False, flipsign=True):
         null_flags = transactions.filter("FLAG is null")
         null_flags.orderBy(F.asc("trndt")).show(100, False)
 
-        filter_flags = transactions.filter("FLAG='INT'")
+        filter_flags = transactions.filter(f"FLAG='{in_category}'")
         # filter_flags = transactions.filter("act_type='bofacredit'")
         filter_flags.orderBy(F.asc("trndt")).show(100, False)
 
-        filter_flags_2 = transactions.filter("FLAG='GR'")
-        # filter_flags = transactions.filter("act_type='bofacredit'")
-        filter_flags_2.orderBy(F.asc("trndt")).show(100, False)
+        # filter_flags_2 = transactions.filter("FLAG='GR'")
+        # # filter_flags = transactions.filter("act_type='bofacredit'")
+        # filter_flags_2.orderBy(F.asc("trndt")).show(100, False)
 
 
 
@@ -155,6 +165,10 @@ def get_aggregations(year, month, in_category, all=False, flipsign=True):
 
         grouped_df = grouped_df.filter(f"FLAG='{in_category}'").orderBy(F.asc("trn_month"))
 
+        grouped_df = grouped_df.filter("FLAG<>'PAY'")
+
+        print_category = grouped_df.select("CATEGORY").filter(f"FLAG='{in_category}'").distinct().rdd.map(lambda row : row[0]).collect()
+
         grouped_df.orderBy(F.desc("trn_month")).show()
 
         if flipsign:
@@ -166,14 +180,20 @@ def get_aggregations(year, month, in_category, all=False, flipsign=True):
         x = x[-10:]
         y = y[-10:]
 
+
+        avg = Average(y)
+
+
         print(x)
         print(y)
+        print(avg)
 
 
         #plt.plot(x, y)
         plt.bar(x, y, align='center')
-        plt.ylabel(f'{in_category}')
-        plt.xlabel('months')
+        plt.ylabel(f'{print_category}')
+        plt.xlabel('[months]')
+        plt.title(f'avg in 10 months is {avg}')
         for i in range(len(y)):
             plt.hlines(y[i], 0, x[i])  # Here you are drawing the horizontal lines
         plt.show()
@@ -190,8 +210,11 @@ def get_aggregations(year, month, in_category, all=False, flipsign=True):
 
 replace_comma = F.udf(lambda s: s.replace(",", ""))
 
+def Average(lst):
+    return sum(lst) / len(lst)
+
 
 #get_aggregations(year=2019, month='02')
-get_aggregations(year=2019, month='02', in_category='FD', all=False, flipsign=True)
+get_aggregations(year=2019, month='02', in_category='LIQ', all=True, flipsign=True)
 
 

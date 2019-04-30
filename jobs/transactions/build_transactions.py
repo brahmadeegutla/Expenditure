@@ -83,7 +83,7 @@ def run_transactions(spark, config, cycle_date, account_type):
         # src = config["source"]["bofa_credit"] + 'eStmt_' + cycle_date_input + '-15.pdf'
         # master = config["target"]["bofa_cc_master"] + trg_cycle_date
         #
-        #new_df = write_bofa_cc_to_master(spark, src, cycle_date)
+        new_df = write_bofa_cc_to_master(spark, src, cycle_date)
         #
         # new_df = convert_date_format(new_df, 'Transaction_date', '%m/%d/%Y', '%Y%m%d')
         #
