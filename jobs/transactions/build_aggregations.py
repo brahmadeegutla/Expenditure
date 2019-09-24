@@ -6,29 +6,12 @@ os.environ['PYSPARK_PYTHON'] = 'python3.7'
 spark = SparkSession.builder.appName("tosparkdf").getOrCreate()
 fs = spark._jvm.org.apache.hadoop.fs.FileSystem.get(spark._jsc.hadoopConfiguration())
 import logging
-import pandas
-import pyspark.sql.functions as F
-from jobs.transactions.build_all_transactions import flip_sign
-from datetime import datetime
-from pyspark.sql.functions import col, udf
-from pyspark.sql.types import DateType
-import matplotlib.pyplot as plt
-import calendar
-from shared.utilities import read_latest_file_from_hdfs
+import pand
 
 
 def get_aggregations(year, month, in_category, all=False, flipsign=True):
     """
-    This function builds the aggregations as needed for that year and month.
-    It also produces histograms in a specific category.
-
-    :param year: input year
-    :param month: input month
-    :param in_category: input category for histogram
-    :param all: for histogram only past 10 months
-    :param flipsign: flipsign is used for reversing the bars. required for only fewer categories like pay.
-    :return: returns aggregations and histograms
-    """
+    This
 
     # getting the main master file path
     all_transactions_path = config["target"]["all_master"]
@@ -67,17 +50,7 @@ def get_aggregations(year, month, in_category, all=False, flipsign=True):
 
             headers = ["Transaction_date", "Description", "Amount", "trndt", "act_type", "new_Description"]
             schema = StructType([StructField(col, StringType()) for col in headers])
-
-            # converting back to spark dataframe
-            transactions = spark.createDataFrame(pandas_monthly_transactions, schema=schema)
-
-            t = transactions.alias('t')
-            f = desc_flags.alias('f')
-
-            # flags the transactions
-            transactions = t.join(f, t.new_Description == f.DESCRIPTIONS, "left_outer").drop("DESCRIPTIONS")
-
-            print('No of null amounts are', transactions.filter("Amount is null").count())
+filter("Amount is null").count())
 
             transactions = transactions.filter("Amount is not null")
 
@@ -108,7 +81,7 @@ def get_aggregations(year, month, in_category, all=False, flipsign=True):
             grouped_df = grouped_df.join(category_flags, "FLAG", "left_outer")\
                          .orderBy(F.desc("total_amt"))
 
-            grouped_df = grouped_df.filter("FLAG<>'PAY'")
+            #grouped_df = grouped_df.filter("FLAG<>'PAY'")
             grouped_df.show(200, False)
 
             y = grouped_df.select("total_amt").rdd.map(lambda row: row[0]).collect()
@@ -185,7 +158,7 @@ def get_aggregations(year, month, in_category, all=False, flipsign=True):
 
         grouped_df = grouped_df.filter(f"FLAG='{in_category}'").orderBy(F.asc("trn_month"))
 
-        grouped_df = grouped_df.filter("FLAG<>'PAY'")
+        #grouped_df = grouped_df.filter("FLAG<>'PAY'")
 
         print_category = grouped_df.select("CATEGORY").filter(f"FLAG='{in_category}'").distinct().rdd.map(lambda row : row[0]).collect()
 
@@ -227,6 +200,7 @@ def get_aggregations(year, month, in_category, all=False, flipsign=True):
 
 replace_comma = F.udf(lambda s: s.replace(",", ""))
 
+
 def Average(lst):
     """
 
@@ -237,6 +211,6 @@ def Average(lst):
 
 
 #get_aggregations(year=2019, month='02')
-get_aggregations(year=2019, month='02', in_category='LIQ', all=True, flipsign=True)
+get_aggregations(year=2019, month='07', in_category='PS', all=True, flipsign=True)
 
 
